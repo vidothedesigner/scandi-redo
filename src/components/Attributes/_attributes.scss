@@ -1,0 +1,101 @@
+.attributeContainer {
+    margin-top: 25px;
+    .attributeHeading {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        margin: 5px 0;
+    }
+    .textAttribute {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000;
+        text-align: center;
+        min-width: 35px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 400;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+    .textAttribute.selected {
+        background-color: #000;
+        color: #fff;
+    }
+    .swatchAttribute {
+        display: inline-block;
+        margin: 0 5px;
+        padding: 10px;
+        background-color: #fff;
+        border: 2px solid white;
+        text-align: center;
+        min-width: 15px;
+        min-height: 15px;
+        cursor: pointer;
+        font-size: 0px;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+    .swatchAttribute.selected {
+        outline: 2px solid #5ECE7B;
+    }
+}
+.bagAttributeContainer {
+    margin-top: 10px;
+    .attributeHeading {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 300;
+        font-family: 'Roboto', sans-serif;
+        margin: 5px 0;
+    }
+    .textAttribute {
+        display: inline-block;
+        margin: 3px;
+        padding: 5px;
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000;
+        text-align: center;
+        min-width: 35px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+    .textAttribute.selected {
+        background-color: #000;
+        color: #fff;
+    }
+    .swatchAttribute {
+        display: inline-block;
+        margin: 0 3px;
+        padding: 0px;
+        background-color: #fff;
+        border: 2px solid white;
+        text-align: center;
+        min-width: 15px;
+        min-height: 15px;
+        cursor: pointer;
+        font-size: 0px;
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+    .swatchAttribute.selected {
+        outline: 2px solid #5ECE7B;
+    }
+}

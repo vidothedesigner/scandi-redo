@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+@import "./reset";
+@import "./components/Navbar/navbar";
+@import "./components/Currencies/currencies";
+@import "./components/Categories/categories";
+@import "./components/Cart/cart";
+@import "./components/Product/product";
+@import "./components/Single/single";
+@import "./components/Gallery/gallery";
+@import "./components/Attributes/attributes";
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #1D1F22;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin: 0 auto;
+    width: 90vw;
+    padding: 0 10px;
+}
+
+.btn {
+    display: flex;
+    width: 292px;
+    border: 0;
+    padding: 10px 64px;
+    margin: 15px 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #5ECE7B;
+}
+
+.btn-green {
+    cursor: pointer;
+
+    color: white;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: #5ece7cc1;
+    }
+}
+
+.overlay {
+    width: 100vw;
+    height: calc(100vh - 65px);
+    position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 99;
+    background: #3f3f3f34;
+}
+
+.stopBody {
+    overflow: hidden;
+}

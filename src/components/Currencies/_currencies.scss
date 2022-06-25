@@ -1,0 +1,51 @@
+.customSelectContainer {
+    position: relative;
+    .customSelected {
+        display: flex;
+        justify-content: flex-end;
+        span {
+            display: inline-block;
+            padding: 5px;
+            margin-right: 5px;
+        }
+        .arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .3s ease; 
+        }
+        .arrow.opened {
+            transform: rotate(180deg);
+            transition: all .3s ease;
+        }
+    }
+    .customItemsToSelect {
+        position: absolute;
+        left: -5px;
+        text-align: left;
+        width: 90px;
+        height: 20px;
+        background-color: #FFF;
+        .currenciesContainer {
+            box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+            &:hover {
+                background-color: #eee;
+                cursor: pointer;
+            }
+        }
+        span {
+            display: inline-block;
+            width: 30px;
+            margin: 8px 10px;
+        }
+        .symbol {
+            width: 15px;
+        }
+    }
+    .customItemsToSelect.visible {
+        display: block;
+        position: absolute;
+        right: 0;
+        background-color: #FFF;
+    }
+}
